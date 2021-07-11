@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+}
+img{
+    display: block;
+    width: 100%;
+}
+
+#gallery-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        color: #FF616D;
+        font-family: sans-serif;
+        font-size: 2.5rem;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        width: 80%;
+        text-align: center;
+    }
+    #filter{
+        display: flex;
+        gap: 4rem;
+        margin: 3rem auto 0;
+        width: 80%;
+        justify-content: center;
+        button{
+            font-size: 1.5rem;
+            padding: .4rem 2rem;
+            cursor: pointer;
+        }
+    }
+    #gallery{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+        margin: 4rem auto;
+        gap: 1rem;
+        #column-one, #column-two, #column-three{
+            display: grid;
+            gap: 1rem;
+        }
+    }
+}
